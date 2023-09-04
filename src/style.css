@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 2.5rem 2.5rem;
+    background-color: rgba(11, 36, 52, 1);
+    font-family: 'Karla', sans-serif;
+}
+
+.canvas{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    padding: 2rem 2.25rem;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.title{
+    margin: 2rem auto;
+    font-size: 50px;
+    text-align: center;
+}
+
+.instructions{
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+}
+
+hr{
+    margin: 2.5rem auto;
+    width: 75%;
+    color: black;
+    opacity: 0.5;
+}
+
+.dice-container{
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+    gap: 2rem;
+}
+
+.die{
+    margin: auto;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.btn-roll{
+    text-align: center;
+}
+
+.btn-roll button{
+    margin: 3rem auto;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.75rem;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    background-color: rgba(80, 53, 255, 1);
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
+}
+
+.btn-roll button:focus{
+    outline: none;
+}
+
+.btn-roll button:active{
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
